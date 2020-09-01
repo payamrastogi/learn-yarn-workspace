@@ -5,11 +5,12 @@
     ],
     "scripts": {
         "test": "lerna run test",
+        "test:since": "lerna run test --since",
         "test:common": "lerna run test --scope=@learn-yarn-workspaces/common",
         "test:server": "lerna run test --scope=@learn-yarn-workspaces/server",
         "test:selected": "lerna run test --scope={@learn-yarn-workspaces/common,@learn-yarn-workspaces/server}",
         "new-version": "lerna version --conventional-commits --yes",
-        "diff": "learn diff"
+        "diff": "lerna diff"
     },
     "devDependencies": {
         "lerna": "^3.22.1"
